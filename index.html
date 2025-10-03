@@ -1,90 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate Marketing for TikTok</title>
+    <title>ScriptBlox - Визуальная копия</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #12121c;
+            color: #e0e0e0;
         }
-        #success-section {
-            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-            opacity: 0;
-            transform: translateY(20px);
+        .bg-card { background-color: #1e1e2d; }
+        .bg-header { background-color: #1a1a2a; }
+        .border-accent { border-color: #3c3c5a; }
+        .text-accent { color: #a970ff; }
+        .btn-primary {
+            background-color: #6d28d9;
+            transition: background-color 0.3s;
         }
-        #success-section.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .btn-primary:hover {
+            background-color: #5b21b6;
         }
-        #apply-section {
-            transition: opacity 0.3s ease-in-out;
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid #6d28d9;
+            color: #a970ff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #6d28d9;
+            color: white;
+        }
+        .btn-green {
+            background-color: #10b981;
+            transition: background-color 0.3s;
+        }
+        .btn-green:hover {
+            background-color: #059669;
+        }
+        .icon-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #8b949e;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .icon-action:hover {
+            color: #e0e0e0;
         }
     </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body class="min-h-screen">
 
-    <!-- Main Content Card -->
-    <div id="main-content" class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-        
-        <!-- Header Illustration -->
-        <div class="flex justify-center items-center">
-            <img src="https://i.postimg.cc/6pJLw8Vn/Gemini-Generated-Image-yrk78wyrk78wyrk7.png" alt="Affiliate Marketing Illustration" class="w-full h-auto object-cover">
-        </div>
-
-        <div class="p-6 md:p-8">
-            <div class="text-center">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Promote products, earn commission</h2>
-                <p class="text-gray-500 text-sm md:text-base mb-8">Start earning commission from every eligible sale you generate by adding product link to your video content!</p>
+    <!-- Header -->
+    <header class="bg-header border-b border-accent shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">
+                <i class="fa-solid fa-cube text-purple-400"></i>
+                ScriptBlox
+            </h1>
+            <div class="hidden md:flex items-center space-x-4">
+                <button class="px-4 py-2 text-sm font-medium rounded-md text-white">Login</button>
+                <button class="btn-primary px-4 py-2 text-sm font-medium rounded-md text-white">Sign Up</button>
             </div>
+            <div class="md:hidden">
+                <button class="text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 max-w-4xl">
+        <div class="space-y-4">
             
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="font-bold text-gray-800 text-lg mb-4 text-center sm:text-left">You are eligible to apply!</h3>
-                <ul class="space-y-4 text-sm text-gray-600">
-                    <li class="flex items-start"><svg class="w-5 h-5 text-teal-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span>Meet our Community Guidelines</span></li>
-                    <li class="flex items-start"><svg class="w-5 h-5 text-teal-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span>Be at least 18 years old</span></li>
-                    <li class="flex items-start"><svg class="w-5 h-5 text-teal-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span>Have 0 followers (or have 0 followers AND be selected for TikTok Shop's creator pilot)</span></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="action-container" class="px-6 md:px-8 pb-8 pt-4">
-            <div id="apply-section">
-                <p class="text-xs text-gray-400 text-center mb-4">By continuing, you agree to the Creators Terms of Use and acknowledge that you have reviewed the TikTok Shop Privacy Policy.</p>
-                <button id="apply-btn" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Apply</button>
-            </div>
-            <div id="success-section" class="hidden">
-                 <div class="bg-green-100 border border-green-200 text-green-800 p-4 rounded-lg text-center">
-                    <p class="font-semibold">Your application has been successfully accepted!</p>
+            <!-- Hero Image Section -->
+            <div class="relative rounded-lg overflow-hidden border border-accent">
+                <img src="https://scriptbloxhub.com/wp-content/uploads/2025/09/quality_restoration_20251002232026416-1536x864.jpg" alt="Game Banner" class="w-full h-auto object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute top-4 left-4 flex items-center space-x-4">
+                    <span class="bg-black/50 text-white text-sm px-3 py-1 rounded-full flex items-center">
+                        <i class="fa-solid fa-eye mr-2"></i> 36.9k Views
+                    </span>
+                </div>
+                <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm px-5 py-4 rounded-lg border border-accent">
+                    <h3 class="text-2xl font-bold text-white">[🌱] Plants vs Brainrots Script☀️</h3>
                 </div>
             </div>
-        </div>
 
+            <!-- Script Info Card -->
+            <div class="bg-card border border-accent rounded-lg p-6">
+                <h2 class="text-3xl font-bold text-white mb-2">
+                    Op Best Script GUI
+                </h2>
+                <p class="mb-4 text-xl font-bold bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent">
+                    [🌱] Plants vs Brainrots ☀️
+                </p>
+                
+
+                <div class="mb-6">
+                    <button id="getScriptBtn" class="btn-primary w-full py-3 rounded-md font-semibold text-lg"><i class="fa-solid fa-download mr-2"></i>Get script</button>
+                </div>
+                
+                <div class="border-t border-b border-accent py-4 flex justify-around items-center">
+                    <div class="icon-action">
+                        <i class="fa-regular fa-thumbs-up text-2xl"></i>
+                        <span class="text-sm mt-1">1200</span>
+                    </div>
+                    <div class="icon-action">
+                        <i class="fa-regular fa-thumbs-down text-2xl"></i>
+                        <span class="text-sm mt-1">0</span>
+                    </div>
+                    <div class="icon-action">
+                        <i class="fa-regular fa-star text-2xl"></i>
+                        <span class="text-sm mt-1">Favorite</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Description Card -->
+            <div class="bg-card border border-accent rounded-lg p-6">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-accent pb-2">Description</h3>
+                <div class="prose prose-invert text-gray-300 space-y-3">
+                    <p>🌱 **Bypasses**</p>
+                    <ul>
+                        <li><span class="font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">DUPE</span></li>
+                        <li>Walkspeed bypass / Fast plant</li>
+                        <li>Remote GUIs</li>
+                        <li>Fly jump</li>
+                        <li>Invisible mode</li>
+                        <li><span class="font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">INSTAKILL</span></li>
+                    </ul>
+                    <p>✨ **Automation**</p>
+                    <ul>
+                        <li>Auto place suns / money</li>
+                        <li>Auto buy seeds</li>
+                        <li>Auto sell items</li>
+                    </ul>
+                    <p>👁️ **ESP**</p>
+                    <ul>
+                        <li>Plant ESP</li>
+                        <li>Sun / coin ESP</li>
+                        <li>Player/name ESP</li>
+                        <li>Walking tracers</li>
+                        <li>Show affordable</li>
+                        <li>Anti invisible</li>
+                    </ul>
+                    <p>🔔 **Webhook Alerts**</p>
+                     <ul>
+                        <li>Spawn alerts</li>
+                        <li>Buy alerts</li>
+                        <li>Brainrot attack notifier / auto server hop (premium only)</li>
+                    </ul>
+                    <p>❓ **Misc**</p>
+                    <ul>
+                        <li>Expensive brainrot sniper / best brainrot viewer</li>
+                        <li>Auto rejoin</li>
+                        <li>Server hop</li>
+                        <li>Anti AFK</li>
+                        <li>Config save/load</li>
+                    </ul>
+                </div>
+                <div class="flex items-center justify-end space-x-4 mt-6 border-t border-accent pt-4">
+                     <button class="text-gray-400 hover:text-white font-medium">Show less</button>
+                     <button class="btn-primary px-5 py-2 rounded-md font-semibold">Show changelog</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="scriptModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50 transition-opacity duration-300">
+        <div class="bg-card border border-accent rounded-lg p-8 max-w-sm w-full text-center relative shadow-2xl transform transition-all scale-95">
+            <button id="closeModal" class="absolute top-2 right-3 text-gray-400 hover:text-white text-3xl font-light">&times;</button>
+            <div class="text-green-400 text-5xl mb-4">
+                <i class="fa-solid fa-check-circle"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Success!</h3>
+            <p class="text-gray-300">You are about to get your script.</p>
+        </div>
     </div>
 
     <script>
-        const applyBtn = document.getElementById('apply-btn');
-        const applySection = document.getElementById('apply-section');
-        const successSection = document.getElementById('success-section');
+        const getScriptButton = document.getElementById('getScriptBtn');
+        const scriptModal = document.getElementById('scriptModal');
+        const closeModalButton = document.getElementById('closeModal');
+        const modalContent = scriptModal.querySelector('div');
 
-        applyBtn.addEventListener('click', () => {
-            applySection.style.opacity = '0';
+        const openModal = () => {
+            scriptModal.classList.remove('hidden');
             setTimeout(() => {
-                applySection.classList.add('hidden');
-                successSection.classList.remove('hidden');
-                setTimeout(() => {
-                    successSection.classList.add('visible');
-                }, 50);
+                scriptModal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10); 
+        };
+
+        const closeModal = () => {
+            scriptModal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                scriptModal.classList.add('hidden');
             }, 300);
+        };
+
+        getScriptButton.addEventListener('click', openModal);
+        closeModalButton.addEventListener('click', closeModal);
+
+        scriptModal.addEventListener('click', (e) => {
+            if (e.target === scriptModal) {
+                closeModal();
+            }
         });
     </script>
 
 </body>
 </html>
+
+
+
+
+
 
 
 
